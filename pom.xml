@@ -6,4 +6,24 @@
   <packaging>pom</packaging>
   <name>eJEErcicios-jakartaee</name>
   <description>proyectos con jakartaee</description>
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    	  <maven.compiler.target>1.8</maven.compiler.target>
+        <jakartaee.api.version>8.0.0</jakartaee.api.version>
+        <mysql-version>8.0.21</mysql-version>
+  </properties>
+  <dependencies>
+  		<dependency>
+        <groupId>jakarta.platform</groupId>
+        <artifactId>jakarta.jakartaee-api</artifactId>
+        <version>${jakartaee.api.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>${mysql-version}</version>
+		</dependency>
+  </dependencies> 
 </project>
